@@ -415,27 +415,6 @@
     .constructrightArrow:hover a{
         color: #ffffff;
     }
-/* Work Section */
-    #work{
-        background: url(../img/workBg.jpg) 0% 0%;
-        background-size: cover;
-    }   
-    .workOverlay{
-        background: rgba(0,0,0,.7);
-        width: 100%;
-        height: 100%;
-    }
-    #work h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 28px;  
-        font-weight: 700;
-        margin-bottom: 10px;  
-    }
-    #work .line{
-        height: 3px;
-        width: 50px;
-        background: #FFD200;   
-    }
 /* Info Section */
     #info{
         background: #FFD200;
@@ -453,25 +432,67 @@
         padding-bottom: 20px;    
     }
 /* Footer Section */
-footer{
-    background: #222222;
-    padding-top: 50px;
-}
-footer .logoImgFrame{
-    margin-bottom: 20px;
-}
-footer p{
-    padding-right: 30px;
-    color: #cccccc;    
-    line-height: 23px;
-}
-footer h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 20px;    
-}
-footer .map{
-    width: 360px;
-    height: 215px;
-}
+    footer{
+        background: #222222;
+        padding-top: 50px;
+    }
+    footer .logoImgFrame{
+        margin-bottom: 20px;
+    }
+    footer p{
+        padding-right: 30px;
+        color: #cccccc;    
+        line-height: 23px;
+    }
+    footer h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 20px;    
+    }
+    footer .map{
+        width: 360px;
+        height: 215px;
+    }
+    footer .col-4{
+        position: relative;
+    }
+    .spans{
+        display:inline-block;
+    }
+    .spansInfo{
+        display: inline-block;
+        position: absolute;
+        color: #cccccc;
+    }
+    footer a{
+        color: #555555;
+        transition: all .3s;
+    }
+    footer a:hover{
+        color: #393939;
+        text-decoration: underline;
+    }
+    footer .spans li{
+        padding: 14px 0;
+        border-bottom: 1px solid #393939;
+    }
+    footer .spansInfo li{
+        padding: 14px 0;
+        border-bottom: 1px solid #393939;
+    }
+    .spans span{
+        font-weight: bold;
+        color: #FFD200;
+        padding-right: 10px;
+    }
+    footer .socialBar{
+        padding-right: 40px;
+    }
+    footer .socialBar a{
+        color: #ffffff;
+    }
+    footer .container-fluid{
+        background: #242424;
+        padding: 30px 0;
+    }
