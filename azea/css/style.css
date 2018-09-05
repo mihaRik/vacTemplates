@@ -1,6 +1,6 @@
 /*  Topbar Section */
     .bgTopBar{
-        background: url(../img/sliderBg.jpg) center -200px;
+        background: url(../img/sliderBg.jpg) center;
         background-size: cover;
     }
     #topBar{
@@ -97,10 +97,6 @@
         color: #222327;
     }
 /* Slider Section */
-    .bg{
-        background: url(../img/sliderBg.jpg) center -200px;
-        background-size: cover;
-    }
     #slider{
         height: 670px;
     }
