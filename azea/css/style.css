@@ -20,8 +20,12 @@
         width: 100px;
         background: transparent;
         color: #ffffff;
-        border: 1px solid #ffffff;
+        border: 1px solid rgba(255,255,255,.3);
         padding: 1px;
+        transition: .3s;
+    }
+    .lang select:hover{
+        background: rgba(255,255,255,.1)
     }
     .lang select option{
         color: #222327;
@@ -415,6 +419,276 @@
     .constructrightArrow:hover a{
         color: #ffffff;
     }
+/* Work Section */
+    #work{
+        background: url(../img/workBg.jpg);
+        background-size: cover;
+        height: 610px;
+        /* padding-top: 50px; */
+    }
+    .workOverlay{
+        background: rgba(0,0,0,.7);
+        height: 92%;
+        padding-top: 50px;
+    }
+    #work h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;  
+        font-weight: 700;
+        margin-bottom: 10px;  
+    }
+    #work .line{
+        height: 2px;
+        width: 50px;
+        background: #FFD200;
+        margin-bottom: 30px;
+    }
+    .workNavBar{
+        position: relative;        
+    }
+    .workNavBar>li{
+        background: #2B2B2B;
+        display: inline-block;
+        padding: 15px;
+        border-top: 3px solid #FFD200;
+    } 
+    .workNavBar li h2{
+        color: #646464;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    #work p{
+        color: #d4d4d4;
+        line-height: 20px;
+    }
+    /* Hover Section */
+        #work li:first-child:hover .idare{
+            visibility: visible;
+        }
+        #work li:first-child:hover{
+            background: #2F2F32;  
+        }
+        #work li:first-child:hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(2):hover .techizat{
+            visibility: visible;        
+        }
+        #work li:nth-child(2):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(2):hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(3):hover .dizayn{
+            visibility: visible;        
+        }
+        #work li:nth-child(3):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(3):hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(4):hover .tikinti{
+            visibility: visible;        
+        }
+        #work li:nth-child(4):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(4):hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(5):hover .temir{
+            visibility: visible;        
+        }
+        #work li:nth-child(5):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(5):hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(6):hover .beton{
+            visibility: visible;        
+        }
+        #work li:nth-child(6):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(6):hover h2{
+            color:#cccccc;
+        }
+        #work li:nth-child(7):hover .pvc{
+            visibility: visible;        
+        }
+        #work li:nth-child(7):hover{
+            background: #2F2F32;  
+        }
+        #work li:nth-child(7):hover h2{
+            color:#cccccc;
+        }
+    /* Idare Section */
+        .idare{
+            position: absolute;
+            width: 1140px;
+            top: 44px;
+            left: 0;
+            padding: 15px;
+            background: #2F2F32;
+            padding-top: 20px;
+            visibility: hidden;
+        }
+        .idare p{
+            color: #d4d4d4;
+            line-height: 20px;
+        }
+        .idareHover{
+            position: relative;
+        }
+        .idareHoverOverlay{
+            width: 100%;
+            height: 99%;
+            background: #111;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 2;
+            transition: all .3s;
+        }
+        .idareHover:hover .idareHoverOverlay{
+            opacity: .5;
+        }
+        .idareHoverOverlay a{
+            position: absolute;
+            top: 80px;
+            left: 135px;
+            z-index: 2;
+            border: 2px solid rgba(255,255,255,.3);
+            padding: 20px 22px;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: all .3s;
+        }
+        .idareHoverOverlay a:hover{
+            background: rgba(255,255,255,.3);
+            border: 2px solid rgba(255,255,255,0);
+        }
+    /* Techizat Section */
+        .techizat{
+            position: absolute;
+            width: 1140px;
+            top: 44px;
+            left: 0;
+            padding: 15px;
+            background: #2F2F32;
+            padding-top: 20px;
+            visibility: hidden;
+        }
+        .techizat ul{
+            list-style: disc;
+        }
+        .techizat ul li{
+            margin-top: 10px;
+            margin-left: 15px;
+            color: #d4d4d4;
+        }
+    /* Dizayn Section */
+        .dizayn{
+            position: absolute;
+            width: 1140px;
+            top: 44px;
+            left: 0;
+            padding: 15px;
+            background: #2F2F32;
+            padding-top: 20px;
+            visibility: hidden;
+        }
+        .dizayn ul{
+            list-style: disc;
+        }
+        .dizayn ul li{
+            margin-top: 10px;
+            margin-left: 15px;
+            color: #d4d4d4;
+        }
+    /* Tikinti Section */
+        .tikinti{
+        position: absolute;
+        width: 1140px;
+        top: 44px;
+        left: 0;
+        padding: 15px;
+        background: #2F2F32;
+        padding-top: 20px;
+        visibility: hidden;
+        }
+        .tikinti ul{
+            list-style: disc;
+            padding-bottom: 10px;
+        }
+        .tikinti ul li{
+            margin-top: 10px;
+            margin-left: 15px;
+            color: #d4d4d4;
+        }
+    /* Temir Section */
+        .temir{
+        position: absolute;
+        width: 1140px;
+        top: 44px;
+        left: 0;
+        padding: 15px;
+        background: #2F2F32;
+        padding-top: 20px;
+        visibility: hidden;
+        }
+        .temir ul li{
+            margin-top: 10px;
+            color: #d4d4d4;
+        }
+    /* Beton Section */
+        .beton{
+        position: absolute;
+        width: 1140px;
+        top: 44px;
+        left: 0;
+        padding: 15px;
+        background: #2F2F32;
+        padding-top: 20px;
+        visibility: hidden;
+        }
+        .beton ul{
+            list-style: disc;
+            padding-bottom: 10px;
+        }
+        .beton ul li{
+            margin-top: 10px;
+            margin-left: 15px;
+            text-transform: uppercase;
+            color: #d4d4d4;
+        }
+        .betonContact{
+            margin-top: 20px;
+        }
+    /* PVC Section */
+        .pvc{
+        position: absolute;
+        width: 1140px;
+        top: 44px;
+        left: 0;
+        padding: 15px;
+        background: #2F2F32;
+        padding-top: 20px;
+        visibility: hidden;
+        }
+        .pvc ul{
+            list-style: disc;
+            padding-bottom: 10px;
+        }
+        .pvc ul li{
+            margin-top: 10px;
+            margin-left: 15px;
+            color: #d4d4d4;
+        }
 /* Info Section */
     #info{
         background: #FFD200;
