@@ -89,12 +89,17 @@
         display: block;
         padding: 15px;
         border-bottom: solid 1px #333;
-        color: #ccc;
         transition: all .3s;
+    }
+    .subMenuItems li a{
+        padding: 0;
+        color: #ccc;
     }
     .subMenuItems li:hover{
         background: #FFD200;
-        color: #222327;
+    }
+    .subMenuItems li:hover a{
+       color: #222327;
     }
 /* Slider Section */
     #slider{

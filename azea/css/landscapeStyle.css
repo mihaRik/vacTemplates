@@ -201,13 +201,13 @@
             color: #999;
             transition: all .3s;
         }
-        .projectNav li:first-child{
+        .projectNav li:nth-child(4){
             background: #333333!important;
         }
-        .projectNav li:first-child a{
+        .projectNav li:nth-child(4) a{
             color: #ffffff!important;
         }
-        .projectNav li:first-child i{
+        .projectNav li:nth-child(4) i{
             position: absolute;
             top: 17px;
             right: 25px;
@@ -225,34 +225,35 @@
             border-bottom: 1px solid #ddd;
         }
     /* Main Content Section */
-    .mainContent{
-        padding: 10px;
-        padding-right: 30px;
-    }
-    .mainContent h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        color: #222222;
-        margin-bottom: 10px;
-    }
-    .mainContent p{
-        color: #555555;
-        line-height: 20px;
-        margin-bottom: 20px;
-    }
-    .example{
-        background: #F8F8F8;
-        margin-bottom: 20px;
-        border-left: 4px solid #FFD200;
-        color: #333333;
-        font-size: 16px;
-        font-style: italic;
-        padding: 40px;
-    }
-    .example p{
-        margin: 0;
-    }
+        .mainContent{
+            padding: 10px;
+            padding-right: 30px;
+        }
+        .mainContent h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 10px;
+        }
+        .mainContent p{
+            color: #555555;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .example{
+            background: #F8F8F8;
+            margin-bottom: 20px;
+            border-left: 4px solid #FFD200;
+            color: #333333;
+            font-size: 16px;
+            font-style: italic;
+            padding: 40px;
+        }
+        .example p{
+            margin: 0;
+            line-height: 30px;
+        }
 /* Footer Section */
     footer{
         background: #222222;
