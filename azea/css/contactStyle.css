@@ -30,6 +30,7 @@
     .lang select option{
         color: #222327;
         background: rgba(0,0,0,.2);
+        /* background: transparent; */
     }
     .socialBar{
         text-align: right;
@@ -98,7 +99,7 @@
         background: #FFD200;
     }
     .subMenuItems li:hover a{
-       color: #222327;
+    color: #222327;
     }
 /* Slider Section */
     #slider{
@@ -142,116 +143,93 @@
     }
 /* Content Section */
     #content{
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
-    /* Image Section */
-        .imgFrame{
-            position: relative;
-            overflow: hidden;
-            height: 169px;
-            margin-bottom: 30px;
+    .mainContent a{
+        color: #555555;
+        font-size: 13px;
+        font-weight: 700; 
+        background: #FFD200;
+        padding: 10px 30px;   
+        border: none;
+    }
+    .mainContent .col-12{
+        background: #555555;
+        padding: 11px 0;
+        padding-bottom: 10px;
+    }
+    .map{
+        height: 380px;
+    }
+    .list li span{
+        color: #777777;
+        font-weight: 700;    
+    }
+    .list li p{
+        color: #777777;
+        margin-top: 5px;
+    }
+    .list li{
+        padding: 15px 0;
+        border-bottom: 1px solid #222222;
+    }
+    .list a{
+        color: #888888;
+        font-weight: normal;
+        background: transparent;
+        padding: 0;
+        transition: all .3s;
+    }
+    .list a:hover{
+        color: #555555;
+        text-decoration: underline;
+    }
+    /* Sidebar Section */
+        .sideBar{
+            background: rgb(245, 245, 245);
+            padding: 30px;
         }
-        .imgFrame img{
-            transition: all .3s linear;
+        .sideBar li{
+            margin: 20px 0;
         }
-        .imgFrame .overlay{
-            position: absolute;
-            top: 0;
-            background: rgba(0,0,0,.5);
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: all .3s;
+        .sideBar h1{
+            color: #222222;
+            font-size: 17px;
+            font-weight: 400;        
         }
-        .imgFrame:hover .overlay{
-            opacity: 1;
-        }
-        .imgFrame:hover img{
-            transform: scale(1.12);
-        }
-        .overlay button{
-            background: transparent;
-            border-style: none;
-            color: #ffffff;
-            font-size: 24px;
-            border: 2px solid rgba(255,255,255,.3);
-            border-radius: 50%;
-            padding: 14px 16px;
-            position: absolute;
-            top: 55px;
-            left: 105px;
-            transition: all .3s;
-        }
-        .overlay button:hover{
-            background: rgba(255,255,255,.3);
-            border: 2px solid rgba(255,255,255,0);
-        }
-    /* Nav Section */
-        .projectNav li{
-            position: relative;
-            background: #eee;
-            border-bottom: 2px solid #ffffff;
-            padding: 20px;
-            transition: all .3s;
-        }
-        .projectNav li a{
-            font-weight: 700;
-            color: #999;
-            transition: all .3s;
-        }
-        .projectNav li:first-child{
-            background: #333333!important;
-        }
-        .projectNav li:first-child a{
-            color: #ffffff!important;
-        }
-        .projectNav li:first-child i{
-            position: absolute;
-            top: 17px;
-            right: 25px;
-            font-size: 20px;
-            color: #FFD200;
-        }
-        .projectNav li:hover{
+        .sideBar .line{
+            height: 2px;
+            width: 45px;
             background: #FFD200;
         }
-        .projectNav li:hover a{
+        .sideBar input{
+            color: #333333; 
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 2px;
+            width: 92%;
+        }
+        .sideBar textarea{
+            font-family: 'Roboto', sans-serif;    
+            padding: 10px;
+            color: #333333; 
+            border: 1px solid #dddddd;
+            border-radius: 2px;
+            width: 92%;
+            min-height: 160px;
+            resize: vertical;
+        }
+        .sideBar a{
+            text-transform: uppercase;
             color: #111111;
+            padding: 3px 35px;
+            border: 1px solid rgba(1,1,1,.2);
+            transition: all .3s;
         }
-        .projectNav ul{
-            padding-bottom: 30px;
-            border-bottom: 1px solid #ddd;
+        .sideBar a:hover{
+            background: #111111;
+            color: #ffffff;
         }
-    /* Main Content Section */
-    .mainContent{
-        padding: 10px;
-        padding-right: 30px;
-    }
-    .mainContent h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        color: #222222;
-        margin-bottom: 10px;
-    }
-    .mainContent p{
-        color: #555555;
-        line-height: 20px;
-        margin-bottom: 20px;
-    }
-    .example{
-        background: #F8F8F8;
-        margin-bottom: 20px;
-        border-left: 4px solid #FFD200;
-        color: #333333;
-        font-size: 16px;
-        font-style: italic;
-        padding: 40px;
-    }
-    .example p{
-        margin: 0;
-    }
 /* Footer Section */
     footer{
         background: #222222;

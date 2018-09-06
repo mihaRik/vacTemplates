@@ -30,6 +30,7 @@
     .lang select option{
         color: #222327;
         background: rgba(0,0,0,.2);
+        /* background: transparent; */
     }
     .socialBar{
         text-align: right;
@@ -98,7 +99,7 @@
         background: #FFD200;
     }
     .subMenuItems li:hover a{
-       color: #222327;
+    color: #222327;
     }
 /* Slider Section */
     #slider{
@@ -142,115 +143,106 @@
     }
 /* Content Section */
     #content{
-        padding-top: 50px;
-        padding-bottom: 100px;
+    margin-bottom: 30px;
     }
-    /* Image Section */
-        .imgFrame{
-            position: relative;
-            overflow: hidden;
-            height: 169px;
-            margin-bottom: 30px;
-        }
-        .imgFrame img{
-            transition: all .3s linear;
-        }
-        .imgFrame .overlay{
-            position: absolute;
-            top: 0;
-            background: rgba(0,0,0,.5);
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: all .3s;
-        }
-        .imgFrame:hover .overlay{
-            opacity: 1;
-        }
-        .imgFrame:hover img{
-            transform: scale(1.12);
-        }
-        .overlay button{
-            background: transparent;
-            border-style: none;
-            color: #ffffff;
-            font-size: 24px;
-            border: 2px solid rgba(255,255,255,.3);
-            border-radius: 50%;
-            padding: 14px 16px;
-            position: absolute;
-            top: 55px;
-            left: 105px;
-            transition: all .3s;
-        }
-        .overlay button:hover{
-            background: rgba(255,255,255,.3);
-            border: 2px solid rgba(255,255,255,0);
-        }
-    /* Nav Section */
-        .projectNav li{
-            position: relative;
-            background: #eee;
-            border-bottom: 2px solid #ffffff;
-            padding: 20px;
-            transition: all .3s;
-        }
-        .projectNav li a{
-            font-weight: 700;
-            color: #999;
-            transition: all .3s;
-        }
-        .projectNav li:first-child{
-            background: #333333!important;
-        }
-        .projectNav li:first-child a{
-            color: #ffffff!important;
-        }
-        .projectNav li:first-child i{
-            position: absolute;
-            top: 17px;
-            right: 25px;
-            font-size: 20px;
-            color: #FFD200;
-        }
-        .projectNav li:hover{
-            background: #FFD200;
-        }
-        .projectNav li:hover a{
-            color: #111111;
-        }
-        .projectNav ul{
-            padding-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-        }
-    /* Main Content Section */
-    .mainContent{
-        padding: 10px;
-        padding-right: 30px;
+    .imgFrame{
+        position: relative;
+        overflow: hidden;
+        height: 236px;
     }
-    .mainContent h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+    .imgFrame img{
+        transition: all .3s linear;
+    }
+    .imgFrame .overlay{
+        position: absolute;
+        top: 0;
+        background: #111;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all .3s;
+    }
+    .imgFrame:hover .overlay{
+        opacity: 0.9;
+    }
+    .imgFrame:hover img{
+        transform: scale(1.12);
+    }
+    .overlay a{
+        color: #FFD200;
+        text-transform: uppercase;
+        font-size: 14px;
         font-weight: 700;
-        color: #222222;
-        margin-bottom: 10px;
+        position: absolute;
+        top: 110px;
+        left: 110px;
     }
-    .mainContent p{
-        color: #555555;
-        line-height: 20px;
-        margin-bottom: 20px;
+/* Elaqe Section */
+    #elaqe{
+        background: #FFD200;
     }
-    .example{
-        background: #F8F8F8;
-        margin-bottom: 20px;
-        border-left: 4px solid #FFD200;
-        color: #333333;
-        font-size: 16px;
-        font-style: italic;
-        padding: 40px;
+    #elaqe h2{
+    color: #222222;   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
     }
-    .example p{
-        margin: 0;
+    #elaqe a{
+        border: solid 2px #111;
+        padding: 10px 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    #elaqe a p{
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #111;
+        display: inline-block;
+        overflow: hidden;
+        transition: all .3s;
+        z-index: 2;
+        position: relative;
+        top: 3px;
+        left: 0;
+    }
+    #elaqe .col-3{
+        margin: 19px 0;
+        text-align: right;
+    }
+    #elaqe .sliderButton{
+        overflow: hidden;
+        padding-top: 11px;
+        height: 30px;
+    }
+    #elaqe .slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #000000;
+        transition: all .3s;
+    }
+    #elaqe a i{
+        color: #111;
+        position: absolute;
+        top: 12px;
+        right: -20px;
+        transition: all .3s;
+        z-index: 2;
+    }
+    #elaqe a:hover p{
+        color: #ffffff;
+        left: -10px;
+    }
+    #elaqe a:hover i{
+        color: #ffffff;
+        right: 20px;
+    }
+    #elaqe a:hover .slider{
+        width: 100%;
     }
 /* Footer Section */
     footer{
