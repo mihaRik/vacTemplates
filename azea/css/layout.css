@@ -11,35 +11,14 @@ a{
 img{
     width: 100%;
 }
-.popup{
-    position: fixed;
-    bottom: 27px;
-    z-index: 150;
-    right: 20px;
-}
-.popup a{
-    padding: 10px 15px;
-    border-radius: 5px;
-    background: #FFD200;
-    color: #111111;        
-}
-footer .socialBar li{
-    transition: all .3s;
-}
-footer .socialBar li:hover{
-}
-footer .socialBar li a{
-    transition: all .3s;
-    padding: 7px 9px;
-    background: #242424;
-}
-footer .socialBar li:hover a{
-    color: #242424!important;    
-    background: #ffffff;
-}
 @font-face{
     font-family: giger;
     src: url(../font/giger.otf)
+}
+footer .sideBar li{
+    padding: 7px 11px;
+    background: #ffffff;
+
 }
 /* @font-face{
     font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,289 @@
+body{
+    width: calc(100vw - 17px);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+}
+img{
+    width: 100%;
+}
+.container-fluid{
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+[class^="col-"]{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    float: left;
+    margin: 10px;
+}
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+/* Cols */
+    .col-1{
+        width: calc(100%/12*1 - 20px);
+    }
+    .col-2{
+        width: calc(100%/12*2 - 20px);
+    }
+    .col-3{
+        width: calc(100%/12*3 - 20px);
+    }
+    .col-4{
+        width: calc(100%/12*4 - 20px);
+    }
+    .col-5{
+        width: calc(100%/12*5 - 20px);
+    }
+    .col-6{
+        width: calc(100%/12*6 - 20px);
+    }
+    .col-7{
+        width: calc(100%/12*7 - 20px);
+    }
+    .col-8{
+        width: calc(100%/12*8 - 20px);
+    }
+    .col-9{
+        width: calc(100%/12*9 - 20px);
+    }
+    .col-10{
+        width: calc(100%/12*10 - 20px);
+    }
+    .col-11{
+        width: calc(100%/12*11 - 20px);
+    }
+    .col-12{
+        width: calc(100%/12*12 - 20px);
+    }
+/* Header Section */
+    header .top{
+        height: 14px;
+        background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+    }
+    header .info{
+        padding: 12px 0;
+        color: #333333;
+        background: #F2F2F2;
+        font-size: 12.19px;
+        letter-spacing: 0.2px;
+    }
+    .logoImgFrame{
+        height: 46px;
+        width: 190px;
+    }
+    nav{
+        margin-top: 40px;
+    }
+    .navBar{
+        padding-left: 25px;
+        text-align: center;
+    }
+    .navBar li{
+        display: inline-block;
+        padding: 16px 10px;
+        
+    }
+    .navBar li a{
+        text-transform: capitalize;
+        padding: 10px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* Dropdown Section */
+        .dropdown{
+            position: relative;
+        } 
+        .dropdownAcademy{
+            position: absolute;
+            top: 45px;
+            left: 10px;
+            width: 185px;
+            text-align: left;
+            background: #393939;
+            border-radius: 7px;
+            padding: 15px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .2s;
+            text-transform: capitalize;
+            z-index: 100;
+            box-shadow: 3px 5px 17px 0 rgba(0, 0, 0, 0.14);
+        } 
+
+        .dropdownAcademy li{
+            padding: 15px 0;
+            transition: all .2s ease-in;
+            width: 100%;
+        }
+        .dropdownAcademy li:hover{
+            background: #333333;
+        }
+        .dropdownAcademy a{
+            display: block;
+            padding: 5px!important;
+            color: #c6c6c6;
+        }
+        .dropdown:hover .dropdownAcademy{
+            visibility: visible;
+            opacity: 1;
+        }
+        .dropdownEdu{
+            padding: 15px;
+            border-radius: 7px;
+            background: #393939;
+            position: absolute;
+            top: 45px;
+            left: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .2s;
+            width: 610px;
+            text-align: left;
+            z-index: 100;
+            box-shadow: 3px 5px 17px 0 rgba(0, 0, 0, 0.14);
+        }
+        .header a{
+            color: #ffffff!important;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .dropdownEdu li{
+            width: 97%;
+            transition: all .2s ease-in;
+        }
+        .dropdownEdu a{
+            text-transform: none!important;
+            display: block;
+            padding: 5px!important;
+            color: #c6c6c6;
+        }
+        .lesson{
+            display: inline-block;
+            width: 49%;
+        }
+        .edumodel{
+            display: inline-block;
+            width: 49%;
+        }
+        .dropdownEdu li:hover{
+            background: #333333;
+        }
+        .dropdown:hover .dropdownEdu{
+            visibility: visible;
+            opacity: 1;
+        }
+    /* Search Section */
+        .search{
+            height: 49px;
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        .search input{
+            position: absolute;
+            right: 22px;
+            top: 0;
+            width: 0;
+            transition: all .4s ease-in;
+            border: none;
+            background: #f2f2f2;
+            padding: 12px 20px;
+            outline: none;
+            font-size: 17px;
+            z-index: 1;
+            visibility: hidden;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        .search a{
+            position: relative;
+            top: 8px;
+            right: 10px;
+            font-size: 20px;
+            background: #f2f2f2;
+            padding: 10px 22px;
+            border-radius: 50%;
+            transition: all .4s ease-in;
+        }
+        .search i{
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 3;
+        }
+        .search a:hover input{
+            width: 170px;
+            right: 22px;
+            visibility: visible;
+        }
+        .search a:hover{
+            transition: all .4s;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .search input:focus{
+            width: 170px;
+            right: 22px;
+            visibility: visible;
+        }
+    /* Muraciet Section */
+        .muraciet{
+            text-align: right;
+        }
+        .muraciet a{
+            text-align: center;
+            width: 130px;
+            display: block;
+            padding: 12px;
+            margin: 3px 0;
+            margin-left: auto;
+            background: #0086cd;
+            border-radius: 8px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 17px;
+            transition: all .2s ease-in;
+        }
+        .muraciet a:hover{
+            background: #0175b3;
+        }
+/* Questions Section */
+    #questions{
+        background: url(../img/questionsBg.png) center;
+        background-size: cover;
+        text-align: center;
+        margin-top: 70px;
+    }
+    span{
+        color: #ec3824;
+    }
+    .header h1{
+        padding: 70px 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    #questions .col-12 .col-12{
+        float: none;
+        text-align: center;
+    }
+    .inputrow{
+        text-align: center;
+        width: 550px;
+        align-items: center;
+    }
