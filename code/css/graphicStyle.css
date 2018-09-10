@@ -1,0 +1,60 @@
+/* Short Info Section */
+    #shortinfo{
+        margin-top: 50px;
+        background: #ffc90a;
+    }
+    .shortheader{
+        position: relative;
+        height: 140px;
+    }
+    .shortheader h1{
+        font-family: visby-extrabold;
+        font-size: 28px;
+        color: #ffffff;
+        position: relative;
+        z-index: 5;
+        top: 50px;
+    }
+    .shortFrame{
+        width: 159px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .schedule{
+        text-align: center;
+    }
+    .schedule li{
+        text-align: left;
+        display: inline-block;
+        margin: 48px 40px;
+    }
+    .schedule p{
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: #222222;
+    }
+    .schedule h4{
+        text-transform: uppercase;
+        font-family: visby-extrabold;
+    }
+    .pdf{
+        text-transform: uppercase;
+        color: #333333;
+        font-size: 10px;
+        background: #cfa308;
+        font-family: visby-bold;
+        border-radius: 3px;   
+        padding: 1px 2px;
+    }
+    .download button{
+        background: transparent;
+        border: 1px solid #404041;
+        border-radius: 7px;
+        padding: 10px 26px;
+        margin: 49px 0;
+        color: #333333;
+        font-size: 15px;
+        font-family: visby-bold;
+    }

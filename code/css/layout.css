@@ -1,6 +1,27 @@
+/* Fonts */
+    @font-face{
+        font-family: visby-light;
+        src: url(../fonts/VisbyCF-Light-az.ttf)
+    }
+    @font-face{
+        font-family: visby-medium;
+        src: url(../fonts/VisbyCF-Medium-az.ttf)
+    }
+    @font-face{
+        font-family: visby-demibold;
+        src: url(../fonts/VisbyCF-DemiBold-az.ttf)
+    }
+    @font-face{
+        font-family: visby-bold;
+        src: url(../fonts/VisbyCF-Bold-az.ttf)
+    }
+    @font-face{
+        font-family: visby-extrabold;
+        src: url(../fonts/VisbyCF-ExtraBold-az.ttf)
+    }
 body{
     width: calc(100vw - 17px);
-    font-family: 'Montserrat', sans-serif;
+    font-family: visby-medium;
     font-size: 14px;
 }
 a{
@@ -18,7 +39,7 @@ img{
     margin: 0 auto;
 }
 [class^="col-"]{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     box-sizing: border-box;
     float: left;
     margin: 10px;
@@ -75,10 +96,11 @@ img{
         background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
     }
     header .info{
-        padding: 12px 0;
+        padding: 2px 0;
         color: #333333;
         background: #F2F2F2;
         font-size: 12.19px;
+        font-family: visby-medium;
         letter-spacing: 0.2px;
     }
     .logoImgFrame{
@@ -86,6 +108,7 @@ img{
         width: 190px;
     }
     nav{
+        font-family: visby-bold;
         margin-top: 40px;
     }
     .navBar{
@@ -98,6 +121,7 @@ img{
         
     }
     .navBar li a{
+        letter-spacing: 1.2px;
         text-transform: capitalize;
         padding: 10px;
         width: 100%;
@@ -111,7 +135,7 @@ img{
         .dropdownAcademy{
             position: absolute;
             top: 45px;
-            left: 10px;
+            left: 20px;
             width: 185px;
             text-align: left;
             background: #393939;
@@ -134,6 +158,7 @@ img{
             background: #333333;
         }
         .dropdownAcademy a{
+            font-family: visby-light;
             display: block;
             padding: 5px!important;
             color: #c6c6c6;
@@ -148,7 +173,7 @@ img{
             background: #393939;
             position: absolute;
             top: 45px;
-            left: 10px;
+            left: 20px;
             visibility: hidden;
             opacity: 0;
             transition: all .2s;
@@ -157,20 +182,23 @@ img{
             z-index: 100;
             box-shadow: 3px 5px 17px 0 rgba(0, 0, 0, 0.14);
         }
-        .header a{
-            color: #ffffff!important;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
         .dropdownEdu li{
             width: 97%;
             transition: all .2s ease-in;
         }
         .dropdownEdu a{
+            font-family: visby-light;            
             text-transform: none!important;
             display: block;
             padding: 5px!important;
             color: #c6c6c6;
+        }
+        .header a{
+            font-family: visby-bold;
+            color: #ffffff!important;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            padding-left: 15px!important;
         }
         .lesson{
             display: inline-block;
@@ -195,6 +223,7 @@ img{
             text-align: right;
         }
         .search input{
+            font-family: visby-light;
             position: absolute;
             right: 22px;
             top: 0;
@@ -246,6 +275,7 @@ img{
             text-align: right;
         }
         .muraciet a{
+            font-family: visby-bold;
             text-align: center;
             width: 130px;
             display: block;
@@ -268,22 +298,195 @@ img{
         background-size: cover;
         text-align: center;
         margin-top: 70px;
+        padding-bottom: 50px;
     }
     span{
         color: #ec3824;
     }
     .header h1{
-        padding: 70px 0;
+        font-family: visby-extrabold;
         font-size: 28px;
+        color: #ffffff;
+        padding: 70px 0;
         font-weight: bold;
+    }
+    .input{
+        background: #ffffff;
+        padding: 20px;
+        text-align: left;
+        border-radius: 8px;
+        padding-bottom: 50px;
+    }
+    .input .col-6{
+        position: relative;        
+    }
+
+    .input input{
+        padding: 10px 0;
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 19px;
+        font-family: visby-light;
+        border: none;
+        border-bottom: 3px solid #dddddd;
+        transition: all .2s ease-in;
+        outline: none;
+    }
+    .underline{
+        height: 3px;
+        width: 0px;
+        transition: all .2s ease-in;
+        background: #ec3824;
+        position: absolute;
+        bottom: 0;
+    }
+    .input input:focus .underline{
+        width: 100px;
+        z-index: 10;
+    }
+    .input input:hover{
+        padding-left: 10px;
+        background: #f2f2f2;
+        width: calc(90% - 10px);
+    }
+    .input input:focus{
+        padding-left: 10px;
+        background: #f2f2f2;
+        width: calc(90% - 10px);
+        border-bottom: 3px solid #ec3824;        
+    }
+    .mobile input{
+        padding-left: 55px;
+        width: 68%;
+        position: relative;
+        top: -10px;
+        left: 0px;
+    }
+    .mobile input:hover{
+        padding-left: 55px;
+        background: transparent;
+        width: 68%;     
+    }
+    .mobile input:focus{
+        padding-left: 55px;
+        background: transparent;
+        width: 68%;          
+    }
+    .mobile select{
+        font-family: visby-light;
+        border: none;
+        outline: none;
+        color: #777777;
+        font-size: 19px;
+        position: relative;
+        top: 24px;
+        background: transparent;
+        z-index: 10;
+    }
+    .sent{
+        text-align: center;
+        padding: 11px 0;
+        padding-right: 24px
+    }
+    .sent a{
+        display: block;
+        padding: 15px 10px;
+        background: #0086cd;
+        transition: all .2s ease-in;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: visby-medium;
+        font-weight: bold;        
+        text-transform: uppercase;
+        align-items: left;
+    }
+    .sent a:hover{
+        background: #0175b3;
+    }
+/* Footer Section */
+    footer{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .footNav h3{
+        font-family: visby-extrabold;
+        font-size: 19px;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 40px;    
+    }
+    .footNav li{
+        margin-bottom: 30px;
+    }
+    .footNav a{
+        padding-bottom: 3px;
+        color: #6f6f6f;
+        font-size: 16px;
+        border-bottom: 1px solid transparent;
+        transition: all .2s ease-in;
+        line-height: 20px;
+    }
+    .footNav a:hover{
+        border-bottom: 1px solid #6f6f6f; 
+    }
+    .footContact h3{
+        font-family: visby-extrabold;
+        font-size: 19px;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 40px;    
+    }
+    .footContact li{
+        margin-bottom: 30px;
+    }
+    .footContact address{
+        font-family: visby-medium;
+        font-size: 15px;
+        color: #6f6f6f;
+        line-height: 25px;
+    }
+    .phone{
+        color: #ec3824;
+        padding: 8px 12px;
+        border: 1px solid #ec3824;
+        border-radius: 12px;
+        font-size: 15px;
+        transition: all .2s ease-in;
+    }
+    .phone:hover{
+        background: #ec3824;
         color: #ffffff;
     }
-    #questions .col-12 .col-12{
-        float: none;
-        text-align: center;
+    .footContact p{
+        font-family: visby-medium;
+        font-size: 15px;
+        color: #6f6f6f;
+        line-height: 25px;
     }
-    .inputrow{
-        text-align: center;
-        width: 550px;
-        align-items: center;
+    .footContact a{
+        font-family: visby-medium;
+        font-size: 15px;
+        color: #6f6f6f;
+        line-height: 25px;
+    }
+    .social i{
+        font-size: 22px;
+        transition: all .2s ease-in;
+    }
+    .social li{
+        display: inline-block;
+        margin: 0 16px;
+    }
+    .social a:hover .fa-facebook-f{
+        color: #3b5998;
+    }
+    .social a:hover .fa-twitter{
+        color: #0084b4;
+    }
+    .social a:hover .fa-instagram{
+        color: #9b56c3;
+    }
+    .social a:hover .fa-linkedin-in{
+        color: #0077b5;
     }

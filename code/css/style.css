@@ -63,10 +63,11 @@
             text-transform: uppercase;
             color: #ffffff;
             font-size: 16px;
-            font-weight: bold;
+            font-family: visby-bold;
             margin-bottom: 5px;
         }
         .newsList li{
+            margin: 4.4px 0;
             padding: 15px 15px;
             width: 92%;
             transition: all .2s ease-in;
@@ -74,6 +75,7 @@
         .newsList li a{
             color: #979797;
             line-height: 22px;
+            font-family: visby-light;
         }
         .newsList li:hover{
             background: #333333;
@@ -99,7 +101,7 @@
         margin-top: 50px;
         color: #222222;
         font-size: 15px;
-        font-weight: bold;
+        font-family: visby-bold;
         text-transform: capitalize;
     }
     #features .row{
@@ -120,11 +122,11 @@
     #services{
         margin-top: 40px;
         text-align: center;
+        font-family: visby-extrabold;
     }
     #services h1{
         color: #000000;
         font-size: 28px;
-        font-weight: bold;
         margin-bottom: 40px;
     }
     #services a{
@@ -184,6 +186,7 @@
         right: 40px;
     }
     #services a p{
+        width: 250px;
         position: relative;
         z-index: 3;
     }
@@ -273,17 +276,19 @@
         position: relative;
     }
     .graduateHeader h2{
+        font-family: visby-light;
         color: #e4e4e4;
         font-size: 37px;
     }
     .graduateHeader h3{
         color: #333333;
         font-size: 19px;
-        font-weight: bold;
+        font-family: visby-extrabold;        
         margin-top: 25px;
         padding-left: 50px;
     }
     .graduateHeader p{
+        font-family: visby-demibold;        
         color: #878787;
         font-size: 15px;
         font-weight: bold;
@@ -296,6 +301,7 @@
         margin-top: 20px;
     }
     #graduates .text p{
+        font-family: visby-light;
         color: #6f6f6f;
         font-size: 15px;
         line-height: 24px;
@@ -323,6 +329,7 @@
     }
 /* Partners Section */
     #partners{
+        font-family: visby-bold;
         margin-top: 100px;
         text-align: center;
     }
