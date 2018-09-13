@@ -6,6 +6,7 @@
         height: 380px;
         overflow: hidden;
         box-shadow: 0 0 10px rgb(167, 167, 167);
+        cursor: pointer;  
     }
     .overlay01{
         height: 50%;
@@ -40,6 +41,7 @@
         position: relative;
         overflow: hidden;
         box-shadow: 0 0 10px rgb(167, 167, 167);
+        cursor: pointer;
     }
     .overlay02{
         position: absolute;
@@ -104,6 +106,7 @@
         height: 280px;
         position: relative;
         box-shadow: 0 0 10px rgb(167, 167, 167);        
+        cursor: pointer;
     }
     .overlay03{
         position: absolute;
@@ -176,6 +179,7 @@
         text-align: center;
         overflow: hidden;
         box-shadow: 0 0 10px rgb(167, 167, 167);
+        cursor: pointer;
     }
     .overlay04{
         opacity: 0;
@@ -249,6 +253,7 @@
         position: relative;
         perspective: 500px;
         overflow: hidden;
+        cursor: pointer;
     }
     .overlay05{
         position: absolute;
@@ -286,6 +291,7 @@
         position: relative;
         padding: 30px 50px;
         perspective: 1000px;
+        cursor: pointer;
     }
     .imgFrame06{
         height: 280px;
@@ -309,50 +315,590 @@
         transform: rotateX(20deg);
     }
 /* Hover 7 Section */
-#hover07 .col-3{
-    height: 280px;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-}
-#hover07 .col-3 img{
-    transform: scale(1.1);
-    transition: all .8s;
-}
-#hover07 .col-3:hover img{
-    transform: scale(1);
-    filter: blur(2px);
-}
-.overlay07{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #0000007e;
-    opacity: 0;
-    transition: all .8s;
-}
-.overlay07:hover{
-    opacity: 1;
-}
-.overlay07 h2{
-    color: #ffffff;
-    transition: all .6s;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-size: 25px;
-}
-.overlay07 p{
-    color: #ffffff;
-    transition: all .6s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-transform: lowercase;
-    font-size: 16px;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.7);
-}
+    #hover07 .col-3{
+        height: 280px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    #hover07 .col-3 img{
+        transform: scale(1.1);
+        transition: all .8s;
+    }
+    #hover07 .col-3:hover img{
+        transform: scale(1);
+        filter: blur(2px);
+    }
+    .overlay07{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #0000007e;
+        opacity: 0;
+        transition: all .8s;
+    }
+    .overlay07:hover{
+        opacity: 1;
+    }
+    .overlay07 h2{
+        color: #ffffff;
+        transition: all .6s;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        font-size: 25px;
+    }
+    .overlay07 p{
+        color: #ffffff;
+        transition: all .6s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-transform: lowercase;
+        font-size: 16px;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7);
+    }
+/* Hover 8 Section */
+    #hover08 .col-4{
+        position: relative;
+        height: 254px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .overlay08{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        transition: all .3s ease-in-out;
+    }
+    .skew08{
+        background: #ffffff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.75;
+        transform: skew(-45deg)  scalex(0);
+        transition: all .3s ease-in-out;
+    }
+    #hover08 .col-4:hover .skew08{
+        transform: skew(-45deg)  scalex(1);
+        transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    #hover08 .col-4:hover .overlay08{
+        opacity: .7;
+        transition-delay: .2s;
+    }
+    #hover08 .col-4:hover .overlay08 h2{
+        opacity: 1;
+        transition-delay: .2s
+    }
+    .overlay08 h2{
+        text-transform: uppercase;
+        font-weight: 500;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: all .3s ease-in-out;
+    }
+    .overlay08 p{
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .overlay08 button{
+        background: #000000;
+        color: #ffffff;
+        border-radius: 25px;
+        font-size: 12px;
+        padding: 12px 25px;
+        border: none;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        outline: none;
+        cursor: pointer;
+    }
+/* Hover 9 Section */
+    #hover09 .col-4{
+        position: relative;
+        height: 254px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .overlay09{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        transition: all .3s ease-in-out;
+    }
+    .skew09{
+        background: #ffffff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.75;
+        transform: skew(45deg)  scalex(0);
+        transition: all .3s ease-in-out;
+    }
+    #hover09 .col-4:hover .skew09{
+        transform: skew(45deg)  scalex(1);
+        transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    #hover09 .col-4:hover .overlay09{
+        opacity: .7;
+        transition-delay: .2s;
+    }
+    #hover09 .col-4:hover .overlay09 h2{
+        opacity: 1;
+        transition-delay: .2s
+    }
+    .overlay09 h2{
+        text-transform: uppercase;
+        font-weight: 500;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: all .3s ease-in-out;
+    }
+    .overlay09 p{
+        position: absolute;
+        text-align: center;
+        width: 80%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .overlay09 button{
+        background: #000000;
+        color: #ffffff;
+        border-radius: 25px;
+        font-size: 12px;
+        padding: 12px 25px;
+        border: none;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        outline: none;
+        cursor: pointer;
+    }
+/* Hover 10 Section */
+    #hover10 .col-3{
+        height: 187px;
+        position: relative;
+        cursor: pointer;
+    }
+    .overlay10{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 1;
+    }
+    .overlay10 h2{
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .overlay10 p{
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        width: 70%;
+        line-height: 25px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .skew10{
+        background: #ffffff;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease-in-out;
+    }
+    #hover10 .col-3:hover .skew10{
+        transform: skew(45deg) rotateY(90deg);
+        transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    #hover10 .col-3:hover .overlay10{
+        opacity: 0;
+    }
+/* Hover 11 Section */
+    #hover11 .col-3{
+        height: 280px;
+        position: relative;
+        cursor: pointer;
+    }
+    .overlay11{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        background: #00000099; 
+        opacity: 0;
+        transition: all .2s;
+    }
+    #hover11 .col-3:hover .overlay11{
+        opacity: 1;
+    }
+    .overlay11 h2{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: all .4s;
+        opacity: 0;
+    }
+    #hover11 .col-3:hover .overlay11 h2{
+        opacity: 1;
+        transition-delay: .3s;
+        top: 15%;   
+    }
+    .overlay11 span{
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;   
+        font-weight: 800;
+        position: absolute;
+        text-transform: uppercase;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: all .4s;
+        opacity: 0;
+    }
+    #hover11 .col-3:hover .overlay11 span{
+        opacity: 1;
+        transition-delay: .3s;        
+        top: 25%;
+    }
+    .overlay11 p{
+        font-size: 13px;
+        color: #ffffff;
+        text-align: center;   
+        font-weight: 400;
+        width: 80%;
+        line-height: 22px;
+        position: absolute;
+        text-transform: lowercase;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    #hover11 .col-3:hover .overlay11 p{
+        transition-delay: .6s;
+        opacity: 1;
+    }
+    .slider11{
+        height: 80%;
+        width: 80%;
+        background: #ffffff66;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        transform: translate(13%, 13%) scaleY(0);
+        transition: all .2s .2s linear;
+    }
+    #hover11 .col-3:hover .slider11{
+        transform: translate(13%, 13%) scaleY(1);    
+        background: transparent;
+        animation-delay: 0s;
+    }
+/* Hover 12 Section */
+    #hover12 .col-3{
+        height: 280px;
+        position: relative;
+        perspective: 500px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .overlay12{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 95%;
+        width: 95%;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: translate(-50%, -50%) rotateX(90deg);
+        background: rgba(255,255,255,0.9);
+        transform-origin: 50%;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+    .overlay12 p{
+        text-align: center;
+        line-height: 20px;
+        color: #999999;
+    }
+    .overlay12 h2{
+        margin: 20px 0;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: b500;
+        font-size: 25px;
+    }
+    #hover12 .col-3:hover .overlay12{
+        transform: translate(-50%, -50%) rotateX(0deg);
+        transform-origin: 50%;
+        opacity: 1;
+    }
+/* Hover 13 Section */
+    #hover13 .col-4{
+        height: 254px;
+        position: relative;
+    }
+    .overlay13{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.623);
+        position: absolute;
+        overflow: hidden;
+        opacity: 0;
+        top: 0;
+        transition: all .2s ease-in-out;
+    }
+    #hover13 .col-4:hover .overlay13{
+        opacity: 1;
+    }
+    .overlay13 h2{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        width: 80%;
+        position: absolute;
+        top: 15%;
+        left: -70%;
+        transition: all .3s ease-in-out;
+        opacity: 0;
+    }
+    #hover13 .col-4:hover .overlay13 h2{
+        left: 15%;
+        transition-delay: .4s;
+        opacity: 1;
+    }
+    .overlay13 span{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        top: 27%;
+        left: -36%;    
+        transition: all .3s ease-in-out;
+        opacity: 0;
+    }
+    #hover13 .col-4:hover .overlay13 span{
+        left: 49%;
+        transition-delay: .4s;
+        opacity: 1;
+    }
+    .overlay13 p{
+        text-transform: lowercase;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        width: 80%;
+        text-align: right;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #hover13 .col-4:hover .overlay13 p{
+        top: 45%;
+        transition-delay: .6s;
+        opacity: 1;
+    }
+    .slider13{
+        width: 0;
+        height: 80%;
+        background: #ffffffa1;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        border-right: 3px solid #fff;
+        transition: all .4s .4s ease-in-out;
+        opacity: 0;
+    }
+    #hover13 .col-4:hover .slider13{
+        width: 80%;
+        transition-delay: 0s;
+        background: transparent;
+        opacity: 1;
+    }
+/* Hover 14 Section */
+    #hover14 .col-4{
+        height: 254px;
+        position: relative;
+    }
+    .slider14{
+        background: #ffffff79;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: scaleX(0);
+        transition: all .5s .4s ease-in-out;
+    }
+    #hover14 .col-4:hover .slider14{
+        transform: scaleX(1);     
+        transition-delay: 0s;
+        background: transparent;   
+    }
+    .slider14 h2{
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        top: 40%;
+        left: 8%;
+        transition: all .3s ease-in-out;
+        opacity: 0;
+    }
+    #hover14 .col-4:hover .slider14 h2{
+        top: 20%;
+        opacity: 1;
+        transition-delay: .5s;
+    }
+    .slider14 span{
+        font-weight: 600;
+    }
+    .slider14 p{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #fff;
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+        transition: all .3s  ease-in-out;
+        opacity: 0;
+    }
+    #hover14 .col-4:hover .slider14 p{
+        opacity: 1;
+        transition-delay: .8s;
+    }
+    .overlay14{
+        background: #000000;
+        opacity: 0;
+        transition: all .2s ease-in;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    #hover14 .col-4:hover .overlay14{
+        opacity: 0.65;
+    }
+/* Hover 15 Section */
+    #hover15 .col-4{
+        height: 254px;
+        position: relative;
+    }
+    .overlay15{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: #000000;
+        opacity: 0;
+        transition: all .2s ease;
+    }
+    #hover15 .col-4:hover .overlay15{
+        opacity: 0.5;
+    }
+    .slider15{
+        position: absolute;
+        /* top: 50%; */
+        /* height: 3px; */
+        background: #fff;
+        width: 100%;
+        /* transform: scaleX(0); */
+        transition: all .2s ease-in-out;
+    }
+    #hover15 .col-4:hover .slider15{
+        transform: scaleX(1);
+    }
+    .slider15 h2{
+        position: absolute;
+        top: 0;
+        text-align: center;
+        padding: 30px 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        box-sizing: border-box;
+        width: 100%;
+        background: #00000066;
+        height: 50%;
+        transition: all .3s .3s ease;  
+        /* opacity: 0;       */
+    }
+    #hover15 .col-4:hover .slider15 h2{
+        top: 0;
+        opacity: 1;
+    }
+    .slider15 p{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: #fff;
+        padding: 40px;
+        text-align: center;
+        box-sizing: border-box;
+        transition: all .3s .3s ease;
+        /* opacity: 0;     */
+        z-index: 5;  
+    }
+    #hover15 .col-4:hover .slider15 p{
+        bottom: 0;
+        opacity: 1;
+    }
