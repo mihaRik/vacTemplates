@@ -859,12 +859,13 @@
         background: #fff;
         width: 100%;
         transform: scaleX(0);
-        transition: all .2s .8s ease-in-out;
+        opacity: 0;
+        transition: all .2s .6s ease-in-out;
     }
     .top15{
         position: relative;
         overflow: hidden;
-        top: -75%;
+        top: 100%;
         text-align: center;
         box-sizing: border-box;
         background: #00000066;
@@ -875,16 +876,16 @@
         text-transform: uppercase;
         color: #fff;
         width: 100%;
-        height: 50%;
+        height: 100%;
         padding: 30px 10px;
         opacity: 0;
     }
     .bottom15{
         position: relative;
         overflow: hidden;
-        bottom: 125%;
+        bottom: 100%;
         width: 100%;
-        height: 50%;
+        height: 100%;
         background: #fff;
         padding: 40px;
         text-align: center;
@@ -893,24 +894,40 @@
         opacity: 0;
     }
     #hover15 .col-4:hover .top15{
-        top: -100%;
+        top: 0;
         opacity: 1;
     }
     #hover15 .col-4:hover .bottom15{
-        bottom: 100%;
+        bottom: 0;
         opacity: 1;
     }
     #hover15 .col-4:hover .slider15{
         width: 100%;
         transform: scaleX(1);
         transition-delay: 0s;
+        opacity: 1;
+    }
+    .topOverflow15{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .bottomOverflow15{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
     }
 /* Hover 16 Section */
     #hover16 .col-4{
         position: relative;
         transition: 4s;
-        animation: loop 4s ease-in-out alternate infinite;
+        animation: loop 4s ease-in-out infinite;
         box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+        height: 254px;
     }
     @keyframes loop{
         0%{
@@ -962,7 +979,7 @@
         text-align: center;
         font-size: 30px;
         left: 20%;
-        animation: looph2 3s ease-in-out alternate infinite;
+        animation: looph2 3s ease-in-out infinite;
     }
     .overlay16 p{
         text-align: center;
@@ -971,7 +988,7 @@
         position: absolute;
         left: 0%;
         color: #fff;
-        animation: loopp 3s ease-in-out alternate infinite;
+        animation: loopp 3s ease-in-out infinite;
     }
     .blur{
         position: absolute;
@@ -1003,6 +1020,26 @@
         z-index: 1;
         background: rgb(32, 32, 32);
     }
+    .underlay17 h2{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+    }
+    .underlay17 p{
+        font-size: 12px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
     #hover17 .col-4:hover img{
         transform: rotateY(180deg);
     }
@@ -1011,4 +1048,223 @@
         z-index: 2;
     }
 /* Hover 18 Section */
-    
+    #hover18 .col-4{
+        height: 254px;
+        position: relative;
+    }
+    .left18{
+        position: absolute;
+        height: 100%;
+        width: 100%;        
+        left: 100%;
+        top: 0;
+        background: rgba(255, 192, 204, 0.473);
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.5);
+        transition: all .3s .3s ease-in-out;
+        z-index: 2;
+        opacity: 0;        
+    }
+    .left18 h2{
+        margin-top: 10px;
+        font-weight: normal;
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 35px;
+        font-size: 27px;
+        color: #fff;
+    }
+    .left18 h2 span{
+        font-weight: 800;
+    }
+    .right18{
+        position: absolute;
+        height: 100%;
+        width: 100%;     
+        right: 100%;
+        top: 0;
+        background: rgba(0, 128, 0, 0.479);
+        padding: 10px;
+        box-sizing: border-box;
+        background: #fff linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
+        transition: all .3s .3s ease-in-out;
+        z-index: 2;
+        opacity: 0;
+    }
+    .right18 p{
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .leftOverflow18{
+        height: 100%;
+        width: calc(50% + 1px);        
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .rightOverflow18{
+        height: 100%;
+        width: calc(50% + 1px);                
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    #hover18 .col-4:hover .right18{
+        right: 0;
+        opacity: 1;
+    }
+    #hover18 .col-4:hover .left18{
+        left: 0;
+        opacity: 1;
+    }
+    .slider18{
+        height: 100%;
+        width: 2px;
+        background: #fff;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: scaleY(0);
+        transition: all .3s .6s ease-in-out;
+        opacity: 0;
+    }
+    #hover18 .col-4:hover .slider18{
+        transform: scaleY(1);
+        transition-delay: 0s;
+        opacity: 1;
+    }
+    .corner18{
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0%, 0%);
+        background: transparent;
+        z-index: 100;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px black;
+        background: gray;
+        transition: all .3s ease-in-out;
+    }
+    .page18{
+        width: 145%;
+        height: 145%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        box-shadow: 0 0 10px black;
+        background: linear-gradient(to right, rgb(68, 68, 68), rgb(179, 179, 179), rgb(179, 179, 179) 61%, rgb(214, 214, 214), rgb(0, 0, 0) 118%);
+    }
+    #hover18 .col-4:hover .corner18{
+        width: 40px;
+        height: 40px;
+        transition-delay: .6s;
+    }
+    .overlay18{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: #00000066;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #hover18 .col-4:hover .overlay18{
+        opacity: 1;
+    }
+/* Hover 19 Section */
+    #hover19 .col-4{
+        position: relative;
+        height: 254px;
+    }
+    .overlay19{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000000b7;
+        transition: all .3s ease-in-out;
+        top: 0;
+        opacity: 0;
+    }
+    .overlay19 h2{
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+    .overlay19 p{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        padding: 0 40px;
+        line-height: 25px;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+    #hover19 .col-4:hover .overlay19{
+        opacity: 1;
+    }
+    #hover19 .col-4:hover .overlay19 h2{
+        top: 30%;
+        opacity: 1;
+    }
+    #hover19 .col-4:hover .overlay19 p{
+        top: 60%;
+        opacity: 1;
+    }
+    .slider19x{
+        box-sizing: border-box;        
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(0);
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transition: all .4s ease-in-out;
+        opacity: 0;
+    }
+    #hover19 .col-4:hover .slider19x{
+        transform: translate(-50%, -50%) scaleX(1);
+        opacity: 1;
+    }
+    .slider19y{
+        box-sizing: border-box;        
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleY(0);
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transition: all .4s ease-in-out;
+        opacity: 0;
+    }
+    #hover19 .col-4:hover .slider19y{
+        transform: translate(-50%, -50%) scaleY(1);
+        opacity: 1;
+    }
