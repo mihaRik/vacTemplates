@@ -1058,10 +1058,10 @@
         width: 100%;        
         left: 100%;
         top: 0;
-        background: rgba(255, 192, 204, 0.473);
         padding: 10px;
         box-sizing: border-box;
         background: rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 60%, rgba(0, 0, 0, 0.7) 100%);
         transition: all .3s .3s ease-in-out;
         z-index: 2;
         opacity: 0;        
@@ -1084,7 +1084,6 @@
         width: 100%;     
         right: 100%;
         top: 0;
-        background: rgba(0, 128, 0, 0.479);
         padding: 10px;
         box-sizing: border-box;
         background: #fff linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
@@ -1266,5 +1265,125 @@
     }
     #hover19 .col-4:hover .slider19y{
         transform: translate(-50%, -50%) scaleY(1);
+        opacity: 1;
+    }
+/* Hover 20 Section */
+    #hover20 .col-4{
+        position: relative;
+        height: 254px;
+    }
+    .topOverflow20{
+        width: 100%;
+        height: calc(50% + 1px);
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+
+    }
+    .bottomOverflow20{
+        width: 100%;
+        height: calc(50% + 1px);
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+    }
+    .top20{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 60%, rgba(0, 0, 0, 0.7) 100%);
+        transition: all .3s .3s ease-in-out;
+        opacity: 0;
+    }
+    .bottom20{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        background: #fff linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
+        transition: all .3s .3s ease-in-out;
+        opacity: 0;
+    }
+    #hover20 .col-4:hover .top20{
+        top: 0;
+        opacity: 1;
+    }
+    #hover20 .col-4:hover .bottom20{
+        bottom: 0;
+        opacity: 1;
+    }
+    .top20 h2{
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .top20 h2 span{
+        font-weight: 800;
+    }
+    .bottom20 p{
+        text-align: center;
+        padding: 35px 50px;
+        line-height: 25px;
+    }
+    .slider20{
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        transform: scaleX(0);
+        transition: all .3s .6s ease-in-out;
+        opacity: 0;
+    }
+    #hover20 .col-4:hover .slider20{
+        transform: scaleX(1);
+        transition-delay: 0s;
+        opacity: 1;
+    }
+    .corner20{
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0%, 0%);
+        background: transparent;
+        z-index: 100;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px black;
+        background: gray;
+        transition: all .3s ease-in-out;
+    }
+    .page20{
+        width: 145%;
+        height: 145%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        box-shadow: 0 0 10px black;
+        background: linear-gradient(to right, rgb(68, 68, 68), rgb(179, 179, 179), rgb(179, 179, 179) 61%, rgb(214, 214, 214), rgb(0, 0, 0) 118%);
+    }
+    #hover20 .col-4:hover .corner20{
+        width: 40px;
+        height: 40px;
+        transition-delay: .6s;
+    }
+    .overlay20{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: #00000066;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #hover20 .col-4:hover .overlay20{
         opacity: 1;
     }
