@@ -254,6 +254,7 @@
         perspective: 500px;
         overflow: hidden;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay05{
         position: absolute;
@@ -292,6 +293,7 @@
         padding: 30px 50px;
         perspective: 1000px;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .imgFrame06{
         height: 280px;
@@ -320,6 +322,7 @@
         overflow: hidden;
         text-align: center;
         position: relative;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
         cursor: pointer;
     }
     #hover07 .col-3 img{
@@ -369,6 +372,7 @@
         height: 254px;
         overflow: hidden;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay08{
         opacity: 0;
@@ -438,6 +442,7 @@
         height: 254px;
         overflow: hidden;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay09{
         opacity: 0;
@@ -506,6 +511,7 @@
         height: 187px;
         position: relative;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay10{
         position: absolute;
@@ -558,6 +564,7 @@
         height: 280px;
         position: relative;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay11{
         width: 100%;
@@ -650,6 +657,7 @@
         perspective: 500px;
         overflow: hidden;
         cursor: pointer;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay12{
         position: absolute;
@@ -686,6 +694,7 @@
     #hover13 .col-4{
         height: 254px;
         position: relative;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay13{
         width: 100%;
@@ -772,6 +781,7 @@
     #hover14 .col-4{
         height: 254px;
         position: relative;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .slider14{
         background: #ffffff79;
@@ -839,6 +849,7 @@
     #hover15 .col-4{
         height: 254px;
         position: relative;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay15{
         width: 100%;
@@ -1009,8 +1020,8 @@
     }
     .underlay17{
         background: gray;
-        width: 100%;
-        height: 100%;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
         position: absolute;
         top: 0;
         color: #fff;
@@ -1037,6 +1048,7 @@
         padding: 0 20px;
         position: absolute;
         left: 50%;
+        line-height: 20px;
         top: 50%;
         transform: translate(-50%, -50%);
     }
@@ -1045,12 +1057,15 @@
     }
     #hover17 .col-4:hover .underlay17{
         transform: rotateY(0deg);
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
         z-index: 2;
     }
 /* Hover 18 Section */
     #hover18 .col-4{
         height: 254px;
         position: relative;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .left18{
         position: absolute;
@@ -1182,6 +1197,7 @@
     #hover19 .col-4{
         position: relative;
         height: 254px;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .overlay19{
         position: absolute;
@@ -1271,6 +1287,7 @@
     #hover20 .col-4{
         position: relative;
         height: 254px;
+        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .topOverflow20{
         width: 100%;
