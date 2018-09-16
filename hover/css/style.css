@@ -293,7 +293,6 @@
         padding: 30px 50px;
         perspective: 1000px;
         cursor: pointer;
-        box-shadow: 0 0 10px rgb(167, 167, 167);
     }
     .imgFrame06{
         height: 280px;
@@ -439,7 +438,7 @@
 /* Hover 9 Section */
     #hover09 .col-4{
         position: relative;
-        height: 254px;
+        height: 253px;
         overflow: hidden;
         cursor: pointer;
         box-shadow: 0 0 10px rgb(167, 167, 167);
